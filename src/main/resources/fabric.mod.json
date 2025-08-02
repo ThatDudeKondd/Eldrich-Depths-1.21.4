@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "eldrich-depths",
+	"version": "${version}",
+	"name": "Eldrich Depths",
+	"description": "A magic mod based around the deep dark, dark magic, and the mod Iron's Spells n' spellbooks.",
+	"authors": [
+		"ThatDudeKondd"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/eldrich-depths/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.thatdudekondd.eldrich_depths.EldrichDepths"
+		],
+		"fabric-datagen": [
+			"net.thatdudekondd.eldrich_depths.EldrichDepthsDataGenerator"
+		],
+		"client": [
+			"net.thatdudekondd.eldrich_depths.EldrichDepthsClient"
+		]
+	},
+	"mixins": [
+		"eldrich-depths.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
