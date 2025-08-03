@@ -2,6 +2,7 @@ package net.thatdudekondd.eldrich_depths;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.thatdudekondd.eldrich_depths.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +12,6 @@ public class EldrichDepths implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+        ModItems.registerModItems();
 	}
 }
